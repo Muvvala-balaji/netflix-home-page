@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,32 +11,53 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Navbar Styles */
 .navbar {
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Aligns items to the left */
     align-items: center;
     background-color: black;
     z-index: 10;
     padding: 0 20px;
 }
 
+/* Netflix Logo */
 .navbar_netflix {
     display: flex;
     align-items: center;
-}
-
-.navbar_nav_items {
-    display: flex;
-    gap: 10px;
+    margin-right: 20px; /* Adds space between the logo and nav items */
 }
 
 .netflix_logo {
-    width: 100px;
+    width: 150px;
 }
+
+/* Navigation Items */
+.navbar_nav_items {
+    display: flex;
+    gap: 20px; /* Adds space between nav items */
+    align-items: center;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: small;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav_link:hover {
+    color: #e50914; /* Netflix red */
+}
+
+
+
 
 .nav_items {
     display: flex;
@@ -76,8 +98,8 @@ body {
 
 .column {
     flex: 0 0 auto;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 3px;
 }
 
 h2 {
@@ -158,3 +180,70 @@ footer .container {
     font-size: small;
     color: #737373;
 }
+
+.item1-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+    font-size: small;
+    gap: 10px;
+}
+
+.item1-link:hover {
+    color: inherit; /* Optional: Keeps the same color on hover */
+}
+
+.item2-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+    font-size: small;
+    gap: 10px;
+}
+
+.item2-link:hover {
+    color: inherit; /* Optional: Keeps the same color on hover */
+}
+
+.item3-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+    font-size: small;
+    gap: 10px;
+}
+
+.item3-link:hover {
+    color: inherit; /* Optional: Keeps the same color on hover */
+}
+
+.item4-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+    font-size: small;
+    gap: 10px;
+}
+
+.item4-link:hover {
+    color: inherit; /* Optional: Keeps the same color on hover */
+}
+
+.item5-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+    font-size: small;
+    gap: 10px;
+}
+
+.item5-link:hover {
+    color: inherit; /* Optional: Keeps the same color on hover */
+}
+
+/* Hide the scrollbar while allowing horizontal scrolling */
+#scroll-container {
+    overflow-x: scroll; /* Ensure horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+#scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+
